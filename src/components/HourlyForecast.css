@@ -21,6 +21,7 @@
         margin-block-end: var(--space-md);
         max-height: calc(560 / 16 * 1rem);
         overflow-y: auto;
+        position: relative;
         
         
         .hour-forecast-card

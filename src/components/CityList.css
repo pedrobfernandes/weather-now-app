@@ -10,6 +10,7 @@
     color: var(--c-text);
     max-height: 10rem;
     overflow: auto;
+    z-index: 100;
 
     
     li

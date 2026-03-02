@@ -1,0 +1,68 @@
+article
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: var(--space-sm);
+    
+    
+    background-image: url("/assets/images/bg-today-small.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: calc(286 / 16 * 1rem);
+    border-radius: var(--space-md);
+    
+    #current-weather-title
+    {
+        outline: none;
+    }
+
+    .city-card-header
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-sm);
+    }
+    
+    
+    .city-card-temperature
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        
+        img
+        {
+            width: 20%;
+        }
+        
+        span
+        {
+            font-size: calc(var(--f-hero-text-size) + var(--space-md));
+            font-weight: 700;
+        }
+    }
+    
+    
+    @media (min-width: calc(600 / 16 * 1rem))
+    {
+        flex-direction: row;
+        justify-content: space-between;
+        
+        .city-card-temperature
+        {
+            justify-content: flex-end;
+        }
+    }
+    
+    
+    @media (min-width: calc(750 / 16 * 1rem))
+    {
+        background-image: url("/assets/images/bg-today-large.svg");
+    }
+}

@@ -1,0 +1,51 @@
+form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-md);
+    justify-content: center;
+    width: 100%;
+    margin: var(--space-lg) auto;
+    position: relative;
+    
+    
+    input,
+    button
+    {
+        width: 100%;
+    }
+    
+    input
+    {
+        background-color: var(--c-input);
+        color: var(--c-text);
+    }
+    
+    button
+    {
+        background-color: var(--c-button);
+        color: var(--c-text);
+    }
+    
+    
+    @media (min-width: calc(500 / 16 * 1rem))
+    {
+
+        flex-direction: row;
+        max-width: calc(560 / 16 * 1rem);
+        
+        
+        input
+        {
+            width: auto;
+            flex: 1;
+        }
+        
+        
+        button
+        {
+            width: auto;
+        }
+    }
+}

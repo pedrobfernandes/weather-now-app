@@ -1,0 +1,45 @@
+    h3
+    {
+        margin-block: var(--space-md);
+    }
+
+.daily-forecast-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(calc(90 / 16 * 1rem), 1fr));
+    gap: var(--space-sm);
+    
+    
+    .day-forecast-container
+    {
+        width: 100%;
+        min-height: calc(150 / 16 * 1rem);
+        background-color: var(--c-cards);
+        padding-block: var(--space-sm);
+        border-radius: var(--space-md);
+        
+        .day-visual-container
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+        }
+        
+        img
+        {
+            width: 50%;
+        }
+        
+        
+        .day-temperatures-container
+        {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding-inline: var(--space-sm);
+            font-size: var(--f-small-size);
+        }
+    }
+}

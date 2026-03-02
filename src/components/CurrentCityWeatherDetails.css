@@ -1,0 +1,26 @@
+.current-weather-description-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(calc(120 / 16 * 1rem), 1fr));
+    gap: var(--space-sm);
+    margin-block: var(--space-md);
+    
+    
+    .unit-description-container
+    {
+        background-color: var(--c-cards);
+        padding-block: var(--space-md);
+        padding-inline-start: var(--space-sm);
+        border-radius: var(--space-md);
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-md);
+        min-height: calc(100 / 16 * 1rem);
+        
+        
+        dd
+        {
+            font-size: calc(var(--f-base-size) * 1.5);
+        }
+    }
+}

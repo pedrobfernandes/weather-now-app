@@ -1,0 +1,38 @@
+.cities-list-dropdown
+{
+    
+    position: absolute;
+    top: 120%;
+    left: 0;
+    
+    width: 100%;
+    background-color: var(--c-cards);
+    color: var(--c-text);
+    max-height: 10rem;
+    overflow: auto;
+
+    
+    li
+    {
+        width: 100%;
+        padding-block: 0.5rem;
+        background-color: var(--c-cards);
+        color: var(--c-text);
+        text-align: start;
+        border: none;
+        border-radius: 0;
+        outline: none;
+        
+        &.active
+        {
+            background-color: var(--c-inner-cards);
+            box-shadow: 0 -3px 6px #5A57A1, 0 3px 6px #5A57A1;
+        }
+    }
+    
+    
+    @media (min-width: calc(500 / 16 * 1rem))
+    {
+        max-width: calc(560 / 16 * 1rem);
+    }
+}

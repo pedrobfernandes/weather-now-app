@@ -1,0 +1,269 @@
+@charset "UTF-8";
+
+
+/* bricolage-grotesque-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Bricolage Grotesque';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/bricolage-grotesque-v9-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+/* dm-sans-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/assets/fonts/dm-sans-v17-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+/* dm-sans-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/assets/fonts/dm-sans-v17-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+/* dm-sans-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/assets/fonts/dm-sans-v17-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+/* dm-sans-600italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'DM Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: url('/assets/fonts/dm-sans-v17-latin-600italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+/* dm-sans-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/dm-sans-v17-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+:root
+{
+    /* Cores */
+    --c-neutral-900: #03012D;
+    --c-neutral-800: #272541;
+    --c-neutral-700: #312F4B;
+    --c-neutral-600: #3D3B5E;
+    --c-neutral-300: #AEAEB7;
+    --c-neutral-200: #D5D4D9;
+    --c-neutral-0: #FFFFFF;
+    
+    --c-orange-500: #FF7C0A;
+    --c-blue-500: #4455DA;
+    --c-blue-700: #2D1C9C;
+    
+    
+    /* Mapeamento de cores */
+    --c-body-background: var(--c-neutral-900);
+    --c-text: var(--c-neutral-0);
+    --c-cards: var(--c-neutral-800); 
+    --c-inner-cards: var(--c-neutral-700);
+    --c-input: var(--c-neutral-800);
+    --c-select: var(--c-neutral-700);
+    --c-button: var(--c-blue-500);
+    --c-select-highlighted: var(--c-neutral-300);
+    
+    
+    /* Tamanho de fontes */
+    --f-base-size: calc(18 / 16 * 1rem);
+    --f-small-size: calc(16 / 16 * 1rem);
+    --f-hero-text-size: calc(52 / 16 * 1rem);
+    
+    
+    /* Espaçamentos */
+    --space-lg: calc(40 / 16 * 1rem);
+    --space-md: calc(20 / 16 * 1rem);
+    --space-sm: calc(10 / 16 * 1rem);
+    --space-xs: calc(5 / 16 * 1rem);
+    --space-xxs: calc(1 / 16 * 1rem);
+    
+    --container-max-size: calc(1100 / 16 * 1rem);
+}
+
+
+*,
+*::before,
+*::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+
+ul, dl
+{
+    list-style: none;
+}
+
+
+button,
+input
+{
+    font: inherit;
+    border: none;
+    outline: none;
+    border-radius: var(--space-sm);
+    padding: var(--space-sm);
+    outline: none;
+}
+
+input:focus,
+input:hover,
+button:focus,
+button:hover,
+select:focus
+{
+    outline: var(--space-xxs) solid var(--c-text);
+}
+
+button:active
+{
+    transform: translate(0.3rem, 0.3rem );
+} 
+
+
+button
+{
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+img
+{
+    max-inline-size: 100%;
+    display: block;
+}
+
+
+select
+{
+    cursor: pointer;
+    background-color: var(--c-select);
+    color: var(--c-text);
+    border: none;
+    border-radius: var(--space-xs);
+    padding: var(--space-xs);
+}
+
+#root,
+html,
+body
+{
+    height: 100%;
+}
+
+
+html
+{
+    font-size: 100%
+}
+
+
+body
+{
+    font-family: 'DM Sans', system-ui, Arial, Helvetica, sans-serif;
+    font-size: var(--f-base-size);
+    font-weight: 300;
+    background-color: var(--c-body-background);
+    color: var(--c-text);
+    width: 100%;
+    cursor: default;
+}
+
+
+.app-wrapper
+{
+    width: min(var(--container-max-size), 90vw);
+    margin: 0 auto;
+}
+
+main
+{
+    position: relative;
+}
+
+.hero-text
+{
+    text-align: center;
+    font-family: 'Bricolage Grotesque', system-ui, sans-serif;
+    font-weight: 700;
+    font-size: var(--f-hero-text-size);
+    display: block;
+}
+
+
+.city-forecast-wrapper
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+    
+    
+    @media (min-width: calc(750 / 16 * 1rem))
+    {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+
+.grid-left-top,
+.grid-right-bottom
+{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid-left-top
+{
+    margin-block-end: var(--space-md);
+
+
+    @media (min-width: calc(750 / 16 * 1rem))
+    {
+        margin-block-end: var(--space-lg);
+    }
+}
+
+.grid-right-bottom
+{
+    margin-block-end: var(--space-lg);
+}

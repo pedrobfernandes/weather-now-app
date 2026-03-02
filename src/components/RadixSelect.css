@@ -1,0 +1,63 @@
+/* Trigger (botão principal) */
+.unit-selector,
+.day-selector
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-xs);
+    border-radius: var(--space-sm);
+    background-color: var(--c-cards);
+    color: var(--c-text-color);
+    min-width: calc(110 / 16 * 1rem);
+    font-size: var(--f-small-size);
+}
+
+.day-selector
+{
+    background-color: var(--c-inner-cards);
+}
+
+
+/* Content (menu) */
+.radix-select-content
+{
+    background-color: var(--c-cards);
+    border-radius: var(--space-sm);
+    overflow: hidden;
+    z-index: 100;
+    width: var(--radix-select-trigger-width);
+    margin-block-start: var(--space-xs);
+}
+
+.day-selector-content
+{
+    background-color: var(--c-inner-cards);
+    border-radius: var(--space-sm);
+    overflow: hidden;
+    z-index: 100;
+    width: var(--radix-select-trigger-width);
+    margin-block-start: var(--space-xs);
+}
+
+
+
+/* Item (cada opção) */
+.radix-select-item
+{
+    padding: var(--space-xs);
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--f-small-size);
+    outline: none;
+}
+
+
+.radix-select-item[data-highlighted]
+{
+    background-color: var(--c-select-highlighted);
+    color: var(--c-cards);
+}

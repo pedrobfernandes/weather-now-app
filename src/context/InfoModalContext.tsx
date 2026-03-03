@@ -200,7 +200,7 @@ export function InfoModalProvider({ children }: { children: ReactNode })
             }
             
             // Minha implementação anterior estava "errada".
-            // Testei agora e parece que não nnecessita de forçar o
+            // Testei agora e parece que não necessita de forçar o
             // foco no modal e apos timeout no botão..           
             
             //~ const timer = setTimeout(() =>

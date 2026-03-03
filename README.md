@@ -41,7 +41,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [My solution](https://www.frontendmentor.io/solutions/responsive-weather-app-react-typescript-css-grid-and-flexbox-yaXNJFnkSL)
 - Live Site URL: [weather-now-app](https://weather-now-app123.netlify.app)
 
 ## My process

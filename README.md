@@ -1,72 +1,76 @@
-# Frontend Mentor - Weather app solution
-This is a solution to the [Weather app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/weather-app-K1FhddVm49). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+# Weather Now
 
-## Table of contents
+Weather application built with React and TypeScript, featuring real-time data, unit conversion and accessible interface.
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-- [Author](#author)
+🔗 **Live Demo:** https://weather-now-app123.netlify.app
 
-## Overview
+---
 
-### The challenge
+## 🚀 Key Features
 
-Users should be able to:
+* Search weather by location
+* Current conditions (temperature, humidity, wind, precipitation)
+* 7-day forecast and hourly breakdown
+* Unit switching (Celsius/Fahrenheit, km/h, mph, mm)
+* Responsive layout (mobile-first)
 
-- Search for weather information by entering a location in the search bar
-- View current weather conditions including temperature, weather icon, and location details
-- See additional weather metrics like "feels like" temperature, humidity percentage, wind speed, and precipitation amounts
-- Browse a 7-day weather forecast with daily high/low temperatures and weather icons
-- View an hourly forecast showing temperature changes throughout the day
-- Switch between different days of the week using the day selector in the hourly forecast section
-- Toggle between Imperial and Metric measurement units via the units dropdown 
-- Switch between specific temperature units (Celsius and Fahrenheit) and measurement units for wind speed (km/h and mph) and precipitation (millimeters) via the units dropdown
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
+---
 
-### Screenshots
+## 🛠️ Tech Stack
 
-| Mobile | Mobile | Mobile |
-|-----------------------|--------------------------|--------------------------|
-| [![Screenshot Mobile](./screenshots/mobile-01.png)](./screenshots/mobile-01.png) | [![Screenshot Mobile](./screenshots/mobile-02.png)](./screenshots/mobile-02.png) | [![Screenshot Mobile](./screenshots/mobile-03.png)](./screenshots/mobile-03.png) |
+* React
+* TypeScript
+* Zod ( runtime validation)
+* CSS (Flexbox + Grid)
+* Open-Meteo API
 
-| Desktop | Desktop | Desktop
-|-----------------------|--------------------------|--------------------------|
-| [![Screenshot Desktop](./screenshots/desktop-01.png)](./screenshots/desktop-01.png) | [![Screenshot Desktop](./screenshots/desktop-02.png)](./screenshots/desktop-02.png) | [![Screenshot Desktop](./screenshots/desktop-03.png)](./screenshots/desktop-03.png) |
+---
 
+## ♿ Accessibility
 
-### Links
+Accessibility was implemented and tested in practice, not only via tools.
 
-- Solution URL: [My solution](https://www.frontendmentor.io/solutions/responsive-weather-app-react-typescript-css-grid-and-flexbox-yaXNJFnkSL)
-- Live Site URL: [weather-now-app](https://weather-now-app123.netlify.app)
+### ✔️ Implemented
 
-## My process
+* Full keyboard navigation
+* Proper semantic HTML structure
+* ARIA usage for dynamic feedback
+* Focus management
 
-### Built with
+### 🧪 Tested with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/)
-- TypeScript
+* Orca screen reader (Firefox on Linux)
+* WAVE
+* IBM Equal Access
+* Firefox Accessibility Tools
 
-## Accessibility
+---
 
-### Tested with
+## 📸 Preview
 
-- Keyboard navigation
-- ORCA screen reader on Firefox (Linux)
-- WAVE
-- IBM Equal Access Accessibility Checker
-- Firefox Native Accessibilty Tool
+| Mobile | Desktop |
+|-----------------------|--------------------------|
+| [![Screenshot Mobile](./screenshots/mobile-03.png)](./screenshots/mobile-03.png) | [![Screenshot Desktop](./screenshots/desktop-02.png)](./screenshots/desktop-02.png) |
 
-## Author
+---
 
-- Frontend Mentor - [@pedrobfernandes](https://www.frontendmentor.io/profile/pedrobfernandes)
-- Linkedin - [@pedrobfernandes](https://www.linkedin.com/in/pedrobfernandes)
+## 🧠 Notes
+
+This project was built as part of a Frontend Mentor challenge, focusing on:
+
+* Practicing TypeScript in a real application
+* Handling API data safely
+* Reinforcing accessibility practices in a SPA context
+
+---
+
+## 🔗 Links
+
+* Frontend Mentor solution:
+  https://www.frontendmentor.io/solutions/responsive-weather-app-react-typescript-css-grid-and-flexbox-yaXNJFnkSL
+
+---
+
+## 📫 Contact
+
+* LinkedIn: https://www.linkedin.com/in/pedrobfernandes

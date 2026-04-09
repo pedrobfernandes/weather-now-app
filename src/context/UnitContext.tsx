@@ -35,7 +35,7 @@ export function useUnit(): UnitContextType
     
     if (context === undefined)
     {
-        throw new Error("useUnit must bem used within a UnitPtovider");
+        throw new Error("useUnit must be used within a UnitPtovider");
     }
     
     return(context);

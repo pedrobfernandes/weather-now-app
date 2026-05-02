@@ -1,6 +1,6 @@
 # Weather Now
 
-Weather application built with React and TypeScript, featuring real-time data, unit conversion and accessible interface.
+Weather application built with React and TypeScript, featuring real-time data, runtime validation and an accessible interface.
 
 🔗 **Live Demo:** https://weather-now-app123.netlify.app
 
@@ -20,9 +20,20 @@ Weather application built with React and TypeScript, featuring real-time data, u
 
 * React
 * TypeScript
-* Zod ( runtime validation)
-* CSS (Flexbox + Grid)
+* Zod (runtime validation)
 * Open-Meteo API
+* CSS (Flexbox + Grid)
+
+---
+
+## 🧠 Learnings
+
+During this project, I focused on:
+
+* Applying TypeScript in a real-world scenario
+* Validating external API data using Zod
+* Handling asynchronous data safely
+* Reinforcing accessibility practices in SPA interfaces
 
 ---
 
@@ -34,7 +45,7 @@ Accessibility was implemented and tested in practice, not only via tools.
 
 * Full keyboard navigation
 * Proper semantic HTML structure
-* ARIA usage for dynamic feedback
+* WAI-ARIA usage for dynamic feedback (aria-live)
 * Focus management
 
 ### 🧪 Tested with
@@ -51,16 +62,6 @@ Accessibility was implemented and tested in practice, not only via tools.
 | Mobile | Desktop |
 |-----------------------|--------------------------|
 | [![Screenshot Mobile](./screenshots/mobile-03.png)](./screenshots/mobile-03.png) | [![Screenshot Desktop](./screenshots/desktop-02.png)](./screenshots/desktop-02.png) |
-
----
-
-## 🧠 Notes
-
-This project was built as part of a Frontend Mentor challenge, focusing on:
-
-* Practicing TypeScript in a real application
-* Handling API data safely
-* Reinforcing accessibility practices in a SPA context
 
 ---
 

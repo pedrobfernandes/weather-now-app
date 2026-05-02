@@ -28,7 +28,7 @@ Weather application built with React and TypeScript, featuring real-time data, r
 
 ## 🧠 Learnings
 
-During this project, I focused on:
+This project was originally based on a Frontend Mentor challenge and extended with additional focus on:
 
 * Applying TypeScript in a real-world scenario
 * Validating external API data using Zod
